@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--A CSS selector chooses which element to apply a style on-->
+        <!--A #_____ indicates to apply the style to an id-->
+        <!--A ._____ indicates to apply the style to a class-->
+        <!--Can also specify which element to apply the style to for a class using element.classname-->
+        <!--Can apply more than one class style to an element-->
+        <!--Can use * to select every element on the page-->
+        <!--Selectors can be grouped together-->
+        <style>
+            p {
+                text-align: center;
+            }
+            #something {
+                color: blue;
+            }
+            .nothing {
+                color: red;
+            }
+            h1.thing {
+                font-size: 30px;
+            }
+            * {
+                font-family: Arial;
+            }
+            h2, h3 {
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello World</p>
+        <p id="something">Hello World</p>
+        <p class="nothing">Hello World</p>
+        <h1>Hello World</h1>
+        <h1 class="thing">Hello World</h1>
+        <h1 class="thing nothing">Hello World</h1>
+        <h2>Hello World</h2>
+        <h3>Hello World</h3>
+    </body>
+</html>

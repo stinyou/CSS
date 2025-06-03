@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* It is possible to shorthand the border style into a single property called border */
+            /* It is a shorthand for the properties border-width, border-style (required), border-color */
+            p.first {
+                border-width: 5px;
+                border-style: solid;
+                border-color: blue;
+            }
+            p.second {
+                border: 5px solid blue;
+            }
+            /* Can also apply the shorthand to individual sides */
+            p.third {
+                border-left: 5px solid blue;
+                border-right: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="first">Hello World.</p>
+        <p class="second">Hello World.</p>
+        <p class="third">Hello World.</p>
+    </body>
+</html>

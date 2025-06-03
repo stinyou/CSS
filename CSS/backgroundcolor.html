@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Recall the background-color property: */
+            body {
+                background-color: turquoise;
+            }
+            div {
+                background-color: rgb(0,255,0);
+            }
+            /* Can use opacity to change the transparency of an element */
+            .faded {
+                background-color: blue;
+                opacity: 0.4;
+            }
+            /* To avoid the text being transparent, use RGBA colours */
+            .faded2 {
+                background-color: rgba(0,0,255,0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Hello World</p>
+        </div>
+        <p class="faded">Hello World</p>
+        <p class="faded2">Hello World</p>
+    </body>
+</html>

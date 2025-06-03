@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* It is possible to express specific styles for each side of the border */
+            p.first {
+                border-top-style: solid;
+                border-right-style: dotted;
+                border-bottom-style: dashed;
+                border-left-style: double;
+            }
+            /* The following two give the same result */
+            p.second {
+                border-top-style: solid;
+                border-bottom-style: solid;
+                border-right-style: dotted;
+                border-left-style: dotted;
+            }
+            p.third {
+                border-style: solid dotted;
+            }
+            /* Note the border style with a different number of terms */
+            p.fourth {
+                border-style: dotted solid dashed double; /* top right bottom left */
+            }
+            p.fifth {
+                border-style: dotted solid dashed; /* top right/left bottom */
+            }
+            p.sixth {
+                border-style: dotted solid; /* top/bottom right/left */
+            }
+            p.seventh {
+                border-style: solid; /* top/right/left/bottom */
+            }
+        </style>
+    </head>
+    <body>
+        <p class="first">Hello World.</p>
+        <p class="second">Hello World.</p>
+        <p class="third">Hello World.</p>
+        <p class="fourth">Hello World.</p>
+        <p class="fifth">Hello World.</p>
+        <p class="sixth">Hello World.</p>
+        <p class="seventh">Hello World.</p>
+    </body>
+</html>

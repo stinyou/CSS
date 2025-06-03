@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* The border-color property defines the colour of the border on all sides */
+            /* There are many different ways to express colour */
+            /* The default border-color is the colour of the element */
+            p.first {
+                border-style: dotted;
+                border-color: blue;
+            }
+            /* The border-style must be set otherwise none of the other properties will be applied */
+            p.second {
+                border-color: blue;
+            }
+            p.third {
+                border-style: dotted;
+                border-color: red;
+            }
+            p.fourth {
+                border-style: dotted;
+                border-color: rgb(255,0,0);
+            }
+            p.fifth {
+                border-style: dotted;
+                border-color: #00ff99;
+            }
+            p.sixth {
+                border-style: dotted;
+                border-color: hsl(200,80%,55%);
+            }
+            /* Can also define individual colours of borders for each side length */
+            p.seventh {
+                border-style: solid;
+                border-color: red black; /* red top/bottom, black left/right */
+            }
+            p.eighth {
+                border-style: solid;
+                border-color: red orange yellow green; /* red top, orange right, yellow bottom, green left */
+            }
+        </style>
+    </head>
+    <body>
+        <p class="first">Hello World.</p>
+        <p class="second">Hello World.</p>
+        <p class="third">Hello World.</p>
+        <p class="fourth">Hello World.</p>
+        <p class="fifth">Hello World.</p>
+        <p class="sixth">Hello World.</p>
+        <p class="seventh">Hello World.</p>
+        <p class="eighth">Hello World.</p>
+    </body>
+</html>

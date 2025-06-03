@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* The border-width property defines the width of the border on all sides */
+            /* There are many different units of width (measured in px, pt, cm, etc. or thin/medium/thick) */
+            /* The default border-width is medium */
+            p.first {
+                border-style: dotted;
+                border-width: 10px;
+            }
+            /* The border-style must be set otherwise none of the other properties will be applied */
+            p.second {
+                border-width: 10px;
+            }
+            p.third {
+                border-style: dotted;
+                border-width: medium;
+            }
+            p.fourth {
+                border-style: dotted;
+                border-width: thin;
+            }
+            /* Can also define individual widths of borders for each side length */
+            p.fifth {
+                border-style: solid;
+                border-width: 2px 5px; /* 2px top/bottom, 5px left/right */
+            }
+            p.sixth {
+                border-style: solid;
+                border-width: 2px 3px 4px 5px; /* 2px top, 3px right, 4px bottom, 5px left */
+            }
+        </style>
+    </head>
+    <body>
+        <p class="first">Hello World.</p>
+        <p class="second">Hello World.</p>
+        <p class="third">Hello World.</p>
+        <p class="fourth">Hello World.</p>
+        <p class="fifth">Hello World.</p>
+        <p class="sixth">Hello World.</p>
+    </body>
+</html>
