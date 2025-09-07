@@ -1,0 +1,15 @@
+body {
+    background-color: #9df9ef;
+    font-family: "Roboto";
+    margin: 50px;
+}
+h1 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+p {
+    font-size: 16px;
+}
